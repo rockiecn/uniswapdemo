@@ -1,0 +1,2 @@
+(this["webpackJsonp@uniswap/interface"]=this["webpackJsonp@uniswap/interface"]||[]).push([[71],{976:function(s,i,t){"use strict";t.r(i),i.default=t.p+"static/media/sv-SE.320c6813.po"}}]);
+//# sourceMappingURL=71.9f6f1bfb.chunk.js.map
