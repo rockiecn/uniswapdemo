@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "description": "Uniswap Interface",
-  "homepage": ".",
+  "homepage": "https://rockiecn.github.io/uniswapdemo",
   "main": "dist/interface.js",
   "module": "dist/interface.esm.js",
   "types": "dist/index.d.ts",
@@ -148,7 +148,8 @@
     "assets:font:generate": "sass src/lib/assets/fonts/index.scss src/lib/assets/fonts/index.css --no-source-map -I node_modules",
     "bundle": "microbundle --define process.env.REACT_APP_IS_WIDGET=true --tsconfig tsconfig.lib.json src/lib/index.tsx --format esm,cjs",
     "bundle:depcheck": "node depcheck.js",
-    "cosmos": "cross-env FAST_REFRESH=false REACT_APP_IS_WIDGET=true cosmos"
+    "cosmos": "cross-env FAST_REFRESH=false REACT_APP_IS_WIDGET=true cosmos",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -171,6 +172,7 @@
     "@lingui/react": "^3.9.0",
     "@popperjs/core": "^2.4.4",
     "@uniswap/redux-multicall": "^1.0.0",
+    "gh-pages": "^3.2.3",
     "immer": "^9.0.6",
     "jotai": "^1.3.7",
     "lodash": "^4.17.21",
@@ -192,9 +194,9 @@
     "wicg-inert": "^3.1.1",
     "widgets-web3-react/core": "npm:@web3-react/core@8.0.15-alpha.0",
     "widgets-web3-react/eip1193": "npm:@web3-react/eip1193@8.0.15-alpha.0",
-    "widgets-web3-react/metamask": "npm:@web3-react/metamask@8.0.15-alpha.0",
-    "widgets-web3-react/url": "npm:@web3-react/url@8.0.16-alpha.0",
     "widgets-web3-react/empty": "npm:@web3-react/empty@8.0.16-alpha.0",
-    "widgets-web3-react/types": "npm:@web3-react/types@8.0.15-alpha.0"
+    "widgets-web3-react/metamask": "npm:@web3-react/metamask@8.0.15-alpha.0",
+    "widgets-web3-react/types": "npm:@web3-react/types@8.0.15-alpha.0",
+    "widgets-web3-react/url": "npm:@web3-react/url@8.0.16-alpha.0"
   }
 }
